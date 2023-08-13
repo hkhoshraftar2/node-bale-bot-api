@@ -1,7 +1,7 @@
 {
-  "name": "node-telegram-bot-api",
+  "name": "node-bale-bot-api",
   "version": "0.61.0",
-  "description": "Telegram Bot API",
+  "description": "Bale Bot API",
   "main": "./index.js",
   "directories": {
     "example": "examples",
@@ -11,7 +11,8 @@
     "telegram",
     "telegram bot",
     "telegram bot api",
-    "bot"
+    "bot",
+    "bale"
   ],
   "scripts": {
     "gen-doc": "echo 'WARNING: `npm run gen-doc` is deprecated. Use `npm run doc` instead.' && npm run doc",
