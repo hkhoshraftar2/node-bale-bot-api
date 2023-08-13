@@ -146,7 +146,7 @@ class TelegramBot extends EventEmitter {
    * @param {Boolean} [options.onlyFirstMatch=false] Set to true to stop after first match. Otherwise, all regexps are executed
    * @param {Object} [options.request] Options which will be added for all requests to telegram api.
    *  See https://github.com/request/request#requestoptions-callback for more information.
-   * @param {String} [options.baseApiUrl="https://api.telegram.org"] API Base URl; useful for proxying and testing
+   * @param {String} [options.baseApiUrl="https://api.bale.ai"] API Base URl; useful for proxying and testing
    * @param {Boolean} [options.filepath=true] Allow passing file-paths as arguments when sending files,
    *  such as photos using `TelegramBot#sendPhoto()`. See [usage information][usage-sending-files-performance]
    *  for more information on this option and its consequences.
@@ -162,7 +162,7 @@ class TelegramBot extends EventEmitter {
     this.options = options;
     this.options.polling = (typeof options.polling === 'undefined') ? false : options.polling;
     this.options.webHook = (typeof options.webHook === 'undefined') ? false : options.webHook;
-    this.options.baseApiUrl = options.baseApiUrl || 'https://api.telegram.org';
+    this.options.baseApiUrl = options.baseApiUrl || 'https://api.bale.ai';
     this.options.filepath = (typeof options.filepath === 'undefined') ? true : options.filepath;
     this.options.badRejection = (typeof options.badRejection === 'undefined') ? false : options.badRejection;
     this._textRegexpCallbacks = [];
